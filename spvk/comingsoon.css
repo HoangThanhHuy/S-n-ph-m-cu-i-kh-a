@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    color:white;
+}
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: Arial, sans-serif;
+
+    /* Nền đen chuyển sang xanh */
+    background: linear-gradient(
+        135deg,
+        #000000 0%,
+        #000814 30%,
+        #001f3f 60%,
+        #0066ff 100%
+    );
+}
+
+/* Khung Coming Soon */
+.comingsoon {
+    width: 500px;
+
+    padding: 60px 40px;
+
+    text-align: center;
+
+    background: #050505;
+
+    border: 2px solid #008cff;
+    border-radius: 15px;
+
+    /* Border phát sáng */
+    box-shadow:
+        0 0 5px #008cff,
+        0 0 15px #008cff,
+        0 0 30px #008cff;
+}
+
+/* Tiêu đề */
+.coming-soon h1 {
+    font-size: 42px;
+
+    margin-bottom: 15px;
+
+    color: #008cff;
+}
+
+/* Nội dung */
+.coming-soon p {
+    font-size: 18px;
+
+    margin-bottom: 30px;
+
+    color: white;
+}
+
+/* Nút quay lại */
+.back-btn {
+    display: inline-block;
+
+    padding: 12px 25px;
+
+    border: 2px solid #008cff;
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: white;
+    background: #008cff;
+
+    transition: 0.3s;
+}
+
+/* Khi đưa chuột vào nút */
+.back-btn:hover {
+    color: #008cff;
+    background: transparent;
+
+    box-shadow: 0 0 15px #008cff;
+}

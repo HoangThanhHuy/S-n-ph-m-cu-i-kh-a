@@ -1,0 +1,127 @@
+*{
+    margin:0;/*xóa khoảng cách bên ngoài của thẻ*/
+    padding:0;/*tạo khoảng cách bên trong*/
+    box-sizing:border-box;/*giúp căn cả cr và cngang*/
+    font-family:Arial, sans-serif;
+}
+body{
+    min-height:100vh;
+    color:#fff;
+    background:#080916;
+    background-image:radial-gradient(circle at 10% 10%,#182264 0,transparent 30%),radial-gradient(circle at 90% 35%,#24134d 0,transparent 28%);
+}
+.dangxuat{
+    padding:12px 25px;
+    border-radius:22px;
+    font-weight: bold;
+    background:red;
+    color:rgb(13, 3, 3);
+    text-decoration:none;
+    display:inline-block;/*giúp các thẻ nằm trên 1 hàng mà vẫn có thể căn chỉnh*/
+}
+.reading h3{
+    margin-bottom:20px;
+    padding-left:14px;
+    border-left:4px solid #00d9ff;
+    font-size:25px;
+    color:#eef3ff;
+    letter-spacing:1px;
+}
+h1{
+    color:#fff;
+    text-shadow:0 0 10px #182dff,0 0 25px #1d9dff;
+}
+header{
+    display:flex;
+    justify-content:space-between;/*phân bố thẻ chiều ngang*/
+    align-items:center;
+    gap:24px;
+    padding:24px 6vw;
+    border-bottom:1px solid #ffffff1c;
+    background:#070916b8;
+    backdrop-filter:blur(10px);
+}
+header h1{
+    color:#eef3ff;
+    font-size:clamp(28px,4vw,45px);
+}
+nav a{
+    color:rgb(51, 6, 255);
+    text-decoration:none;/*xóa phần trang trí*/
+    margin-left:25px;/*căn bên trái*/
+    transition:0.3s;
+}
+nav a:hover{
+    color:rgb(17, 0, 255);
+}
+.reading{
+    max-width:1400px;
+    margin:auto;
+    padding:44px 6vw 70px;/*khoảng cách trong thẻ*/
+}
+.reading h2{
+    margin-bottom:25px;/*khoảng cách phía dưới thẻ*/
+    font-size:35px;
+}
+.reading-row{
+    display:flex;
+    gap:24px 18px;/*khoảng cách giữa các thẻ*/
+    flex-wrap:wrap;/*cho thẻ xuống khi k đủ chỗ*/
+}
+.card{
+    width:151px;
+    height:200px;
+    border:1px solid #7569c9;
+    background:#171a38;
+    box-shadow:0 8px 20px #0008,0 0 15px #513cb066;
+    display:flex;/*xếp thẻ theo hàng ngang*/
+    justify-content:center;
+    align-items:center;
+    font-size:50px;
+    border-radius:10px;
+    overflow:hidden;
+    transition:transform .3s,box-shadow .3s;/*giúp hiệu ứng mượt hơn*/
+}
+.card img{
+    max-width:100%;
+    max-height:100%;
+    object-fit:contain;
+    display:block;
+}
+.card:hover{
+    transform:translateY(-8px) scale(1.03);
+    box-shadow:0 14px 28px #000b,0 0 22px #14dbf1;
+}
+.search-box input{
+    width:min(250px,32vw);
+    padding:12px;
+
+    border:1px solid #515a9a;
+    border-radius:22px;
+    outline:none;/*xóa viền*/
+}
+.search-box button{
+    padding:12px 20px;
+    border:none;
+    border-radius:22px;
+    background:#0261ef;
+    color:rgb(18, 12, 12);
+    cursor:pointer;
+    font-weight: bold;
+}
+.bxh{
+    padding:12px 25px;
+    border-radius:12px;
+
+    background:#f5d547;
+    color:#17131f;
+    text-decoration:none;
+    display:inline-block;/*giúp các thẻ nằm trên 1 hàng mà vẫn có thể căn chỉnh*/
+}
+footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
